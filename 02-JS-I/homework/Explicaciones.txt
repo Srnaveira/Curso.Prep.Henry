@@ -1,0 +1,85 @@
+a) Que es una variable? 
+
+una variable es un elemento (conjunto de caracteres, números, valores constantes, etc.) que se almacenan para su posterior utilización. 
+
+se define de esta manera: 
+
+var (nombre de la variable) = (valor que toma); 
+
+Ejemplo:  
+
+var year = 2021 
+
+b) Que es una Sting? 
+
+Una Sting es un conjunto de caracteres almacenados en una variable los mismos tienen que estar definidos entre '' o "". 
+
+se define de esta manera: 
+
+var (nombre de la variable) = ('valor que toma'); 
+
+Ejemplo:  
+
+var texto = 'Hola mundo' 
+
+c) Que es una Función? 
+
+Una función es un código escrito para invocar una serie de operaciones o acciones que buscan simplificar la programación. ya que al invocar la función evitamos tener que escribir todo el contenido de la función repetidamente.  
+
+se define de esta manera: 
+
+function (nombre de la función)() { 
+	(Que se hace dentro de la función); 
+} 
+
+Ejemplo:  
+
+function muestranombre() { 
+	console.log('Sebastian'); 
+} 
+
+c1)  Argumentos, los argumentos son elementos (números/Sting/bolean) o variables que se le pasan a una función para su utilización dentro de la misma. 
+
+function (nombre de la función)(argumentos) { 
+	(Que se hace dentro de la función); 
+} 
+
+Ejemplo:  
+
+var nombre = Sebastian; 
+
+function muestranombre(nombre) { 
+	console.log(nombre); 
+} 
+
+c2)  Return, los return son los resultados que me devuelve la función  
+
+function (nombre de la función)(argumentos) { 
+	(Que se hace dentro de la función); 
+	(finaliza con un return); 
+} 
+
+Ejemplo:  
+
+var numero1 = 100; 
+var numero2 = 200; 
+function sumanumeros(numero1, numero2) { 
+	var adicion = numero1 + numero2; 
+	return adicion; 
+} 
+
+d) que es un IF? 
+
+Un IF es una operación que realiza una comparación y según el resultado de la misma realiza diferentes acciones las cuales fueron definidas en la misma. 
+
+function compara(a, b) { 
+	if (a=b){ 
+		console.log('Son Iguales'); 
+	} else { 
+		console.log('Son Distintos'); 
+	} 
+} 
+
+e) Que son los Valores Bolean? 
+
+Los valores bolean son valores que solo pueden tener dos estados 0/1 o False/true es algo muy utilizado en la computación y electrónica ya sean en los micro conductores para representar la presencia o no de corrientes como en la programación para definir un estado de una operación, etc.   
