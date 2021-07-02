@@ -1,0 +1,32 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+for
+&&, ||, !
+
+Que es un For?
+
+Un for es una sentencia que mientras cumpla una o mas condiciones va a repetir su ejecución hasta que deje cumplir la misma se lo conoce como una sentencia de bucle.
+
+un ejemplo de un for sencillo:
+
+for (var i = 0; i < 10 ; i++) {
+	console.log(i)
+}
+
+Que es &&?
+
+se lo conoce como AND o Y (en español) y en síntesis seria algo así mientras se cumpla esto &&(AND/Y) esto deja pasar la sentencia por ejemplo siempre para que deje pasar todas las sentencias deben ser verdaderas.
+
+Que es ||?
+
+se lo conoce como OR o O (en español) y en síntesis seria algo así mientras se cumpla esto ||(OR/0) esto deja pasar la sentencia, por ejemplo siempre que una sentencia sea verdadera deje pasar.
+
+
+Que es !?
+
+Se lo conoce como NOT o NO (en español) y en síntesis es lo contrario a lo que me debería dar una sentencia por ejemplo si el resultado es true al estar precedido por el ! (NOT/NO) devolvería false, si fuera false devolvería true, etc.
+
+
+
+
+
