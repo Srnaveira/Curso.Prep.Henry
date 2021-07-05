@@ -1,0 +1,35 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Objetos
+Propiedades
+Métodos
+Bucle for…in
+Notación de puntos vs notación de corchetes
+
+
+Que es un Objeto?:
+
+un objeto es una colescion de informacion relacionada agrupadas por una clave y un valor, dentro de los objetos podemos tener datos numericos, strings, variables bollean, metodos(funciones), arrays, etc.
+
+Que es una Propiedades?
+
+una propiedad es una key dentro del objeto como dijimos antes los objetos son una agrupacion de distintas informaciones relacionadas por su indicador(key) y su valor.
+
+
+Que es un Métodos?
+
+un Metodo es una funcion dentro de un objeto.
+
+
+que es un Bucle for…in?
+
+Como los objetos no contienen un indice numerico y se puede necesitar recorerlos se creo el bucle For...in
+
+
+
+Notación de puntos vs notación de corchetes
+
+les la forma de invocar la informacion dentro de los objetos con puntos los llamamos con el nombre del objeto "." key y asi obtenemos el valor dentro del mismo.
+con corchetes se llaman mediante el objeto "[]" y dentro del mismo el nombre de la key invocada como uan string.
+
+
