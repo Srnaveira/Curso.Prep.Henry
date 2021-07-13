@@ -1,0 +1,15 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+
+prototype
+
+Para evitar tener que escribir repetidamente funciones que afectan tanto el rendimiento como la complejidad del código se usan los prototypos que en síntesis es como asignar a un objeto funcionalidades que están en otro objeto sin la necesidad de definirlas nuevamente si no que haríamos una especie de link para que si no encuentra esa función en nuestro objeto busque en el objeto padre del mismo. 
+
+
+
+
+Constructors (de Clases)
+
+Son objetos a los que podemos hacer referencia al crear un objeto, es decir siempre que creamos un  objeto este fue creado en base a un objeto padre del mismo.
+Serian como plantillas preparadas para poder usarlas sin tener que hacer todo el trabajo de 0
+Por ejemplo puedo crear un Objeto llamado Auto el cual tiene propiedades (nombre, Color, Año) transformándolo en el objeto padre de los nuevos objetos que cree por ejemplo un objeto por cada fabricante (Renault, Chevrolet, Ford, etc.) que comparten las propiedades de Auto..
