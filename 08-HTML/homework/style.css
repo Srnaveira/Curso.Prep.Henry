@@ -5,13 +5,22 @@ img{
    width: 400px;
 }
 #spanId{
-    font-size: 18px;
-    margin: 50px;    
+    font-size: 20px;
+    margin: 50px;
+    color: white;
 }                    
 #thirdDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 1203px;
     width: 600px;
     background-color: black;
     border: 10px solid red;
-    padding: 50px;
+    
+}
+.divClass{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
 }
