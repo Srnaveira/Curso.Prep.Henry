@@ -72,6 +72,10 @@ function asAmirror(str) {
   // }
   // return array.join(' '); // lo vuelvo a tranformar en una string cambiando las "," por espacios " "
 
+  //Otra manera de hacerlo con Metodos.....
+  // var rts = str.split('').reverse().join('');
+  // rts = rts.split(' ').reverse().join(' ');
+  // return rts;
   var sumacaracter = '';
   var sumacaracter2 = '';
   for(var i = 0; i <= str.length; i++){
