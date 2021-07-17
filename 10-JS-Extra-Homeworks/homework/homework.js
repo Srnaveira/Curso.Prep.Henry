@@ -108,20 +108,64 @@ function capicua(numero){
    } else {
            return 'No es capicua';
    }
+  // var temporal = numero.toString(); //tranformo el numero en una string ej 100 a ['1','0','0']
+  // String.prototype.reverse = function(){
+  //     return this.split('').reverse().join(''); reverse cambia el orden a [0, 0, 1] el join lo vuelve a tranformar en [001]
+  // } //El metodo split() divide un objeto del tipo string en un array (verctor) de cadena mediante la separacion de la cadena en subcadenas
+  // var oremun = temporal.reverse();
+  // if(temporal == oremun) {
+  //            return 'Es capicua';
+  //    } else {
+  //            return 'No es capicua';
+  //    }   
 }
+
 
 
 function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  // var array= cadena.split('');
+  // function eliminarcaracateres(array, item){
+  //       var indice = array.indexOf(item);
+  //       if(indice !== -1){
+  //                    array.splice(indice,1);
+  //            }
+  // }    
+  // for(var i = 0; i < array.length ; i++){
+  //       if(array[i] === 'a'|| array[i] === 'b' || array[i] === 'c'){
+  //               eliminarcaracateres(array, 'a');
+  //               eliminarcaracateres(array, 'b');
+  //               eliminarcaracateres(array, 'c');
+  //       }
+  // }
+  // return array.join('');
+  var array = cadena.split('');
+  array = array.filter(function(elemento){ //usando filter
+    return elemento !== 'a' && elemento !== 'b' && elemento !== 'c';
+  });
+  return array.join('');
 }
+
+
+
 
 
 function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+  var ordenar = arr.sort(function(a, b){
+        if(a.length > b.length){
+                  return 1;
+        }
+        if(a.length < b.length){
+                  return -1;
+        }
+        return 0;
+  });
+  return ordenar;
 }
 
 
@@ -131,6 +175,18 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  var arraytemp = [];
+  for(var i = 0 ; i < arreglo1.length ; i++){
+            for(var x = 0; x < arreglo2.length ; x++){
+                      if(arreglo1[i] === arreglo2[x]){
+                                   arraytemp.push(arreglo1[i]);
+                      }  
+            }
+  }
+  arraytemp.sort(function(a, b){
+        return a - b;
+  });
+  return arraytemp;
 }
 
 
