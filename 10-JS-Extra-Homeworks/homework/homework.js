@@ -10,6 +10,14 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var array = Object.entries(objeto);
+  return array;
+
+  //var array = [];
+  //for(var clave in objeto){
+  //      array.push([clave, objeto[clave]]);
+  //}
+  //return array;
 }
 
 
@@ -18,6 +26,14 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  var array= {};
+  for(var i = 0; i <string.length; i++){
+      if(!array[string[i]]){
+        array[string[i]] = 0;
+      }
+    array[string[i]] = array[string[i]] + 1;    
+  }
+  return array;
 }
 
 
@@ -26,6 +42,16 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var suma = '';
+  var suma2 = '';
+  for (i = 0; i < s.length ; i++ ){
+          if(s.toUpperCase()[i] === s[i]) {
+                      suma = suma + s[i];
+              } else {
+                      suma2 = suma2 + s[i];
+                    }  
+  }
+  return suma + suma2;
 }
 
 
@@ -33,8 +59,34 @@ function asAmirror(str) {
   //La función recibe una frase. 
   //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer de izquierda a derecha 
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
-  //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
+  //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> 
   //Escribe tu código aquí
+  // var rts = '' //almaceno la str invertida
+  // var array = [];
+  // for (var i = str.length -1; i >= 0 ; i--){ 
+  //       rts += str[i]; // con este for invierto el contenido
+  // }
+  // rts = rts.split(' ');  // convierte el string de texto de esto "!esolc si egnellahC yrneH ehT" en esto ["!esolc" ,"si" ," egnellahC" , "yrneH","ehT"]
+  // for(var i = rts.length -1; i >= 0 ; i--){
+  //       array.push(rts[i]); //recorro el rts y lo agrego al array invertido
+  // }
+  // return array.join(' '); // lo vuelvo a tranformar en una string cambiando las "," por espacios " "
+
+  var sumacaracter = '';
+  var sumacaracter2 = '';
+  for(var i = 0; i <= str.length; i++){
+             if ((str[i] != ' ') && (i != str.length)){
+                            sumacaracter = str[i] + sumacaracter;
+                    } else {
+                            if(str[i] === ' '){
+                                                sumacaracter2 = sumacaracter2 + sumacaracter + str[i];
+                                                sumacaracter = ''
+                                      } else {
+                                                sumacaracter2= sumacaracter2 + sumacaracter;
+                                              }
+                            }
+  }
+return sumacaracter2;
 } 
 
 
@@ -43,6 +95,19 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  var oremun = '';
+  var temporal = numero.toString();
+  for(var i = temporal.length -1 ; i >= 0; i--){
+          oremun = oremun + temporal[i];
+  }
+  //lo de abajio funciona ya que no uso === si usara ese metodo no puede comparar un numero contra una
+  //string por tal motivo lo transformo con el metodo parseInt():
+  //oremun = parseInt(oremun); // transforme la strin en un mumero como ambos son numeros puedo usar el ===.
+  if( numero == oremun){ 
+           return 'Es capicua';
+   } else {
+           return 'No es capicua';
+   }
 }
 
 
